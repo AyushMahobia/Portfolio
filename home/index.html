@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1188px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:637px)" href="phone.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <title>Potfolio</title>
+</head>
+
+<body>
+    <header>
+        <section class="navsection">
+            <div class="logo">
+                <h1>Portfolio</h1>
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#service">Experience</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </section>
+
+        <main>
+            <div id="leftside">
+                <h3>Hello</h3>
+                <h1><span class="color1"> I am Ayush Mahobia</h1>
+                <h2><span class="color1">Frontend Developer & Programmer</h2>
+                <a href="https://drive.google.com/file/d/1EAK4bdPAExHEk2ybKO57pekziIkiXMcC/view?usp=sharing"
+                    target="_blank">Resume</a>
+            </div>
+
+            <div class="rightside">
+                <!-- <img src="../images/photo1.jpg" alt=""> -->
+                <img src="../images/mainImg.png" alt="">
+            </div>
+        </main>
+    </header>
+
+    <!-- About Me -->
+    <section id="about">
+        <div class="main">
+            <img src="/../images/aboutMe.jpg" alt="">
+            <div class="about-text">
+                <h2>"About Me"</h2>
+                <h5>Developer & Programmer</h5>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum aut expedita quia cupiditate
+                    similique. Tenetur velit quidem odio ducimus iste ut iure, soluta nemo aspernatur, veritatis natus!
+                    Modi, commodi perspiciatis?
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae reprehenderit iste nam, enim eum
+                    autem illo placeat laboriosam, modi molestias, praesentium nesciunt saepe corporis shubham tatti h
+                    voluptatem nostrum. Provident, ad asperiores? Corporis esse sit nulla placeat.</p>
+
+                <a class="button" href="#contact">Let's Talk</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- work -->
+    <div id="service">
+        <div class="title">
+            <h2>"Experience & Interest"</h2>
+        </div>
+        <div class="grid">
+            <div class="box">
+                <div class="card one">
+                    <h3>Experience</h3>
+                    <h5>Assistent Supervisor</h5>
+                    <div class="about-work">
+                        <div>
+                            <p class="p1">I used to work as an Assistant Supervisor in Forever which is a network
+                                marketing company. Where we build a network of business partners or salespeople to
+                                assist with lead generation and closing sales.</p>
+                            <a href="https://foreverliving.com/home" target="_blank">Read More</a>
+                        </div>
+                        <img src="../images/forever.png" alt="">
+                    </div>
+                </div>
+
+                <div class="card two">
+                    <h3>Project</h3>
+                    <div class="Project">
+                        <ul>
+                            <li>Portfolio</li>
+                            <li>Food Ordering</li>
+                            <li>Mobile Features</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card three">
+                    <h3>Interest</h3>
+                    <div class="interest">
+                        <ul>
+                            <li>Software Developement</li>
+                            <li>Problem Solving</li>
+                            <li>Gaming</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+        <h2>"Contact"</h2>
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <div>
+                <label for="name">Name :</label>
+                <input type="text" name="myName" id="name" class="size" required>
+            </div>
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" name="myEmail" id="email" class="size" required>
+            </div>
+            <div>
+                <label for="phone">PhoneNo. :</label>
+                <input type="tel" id="phone" name="phone" class="size" required>
+                <!-- pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" -->
+            </div>
+            <div>
+                <label for="your-self">Message</label>
+                <textarea name="myText" id="message" cols="47" rows="10" required></textarea>
+            </div>
+            <div>
+                <button id="submit" type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "Ayush Mahobia",
+                Password: "password",
+                To: 'ayushmahobiya123@gmail.com',
+                From: document.getElementById("email"),
+                Subject: "New contact form enquiry",
+                Body: "Name : "+ document.getElementById("name").value
+                        + "<br> Email : " + document.getElementById("email").value
+                        + "<br> Phone No : " + document.getElementById("phone").value
+                        + "<br> Message : " + document.getElementById("message").value
+            }).then(
+                message => alert("Message sent successfully")
+            );
+        }
+    </script>
+</body>
+
+</html>

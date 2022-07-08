@@ -1,0 +1,54 @@
+#leftside{
+    margin-left: 20px;
+}
+#leftside h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+#leftside h3::after {
+    content: "";
+    width:0px;
+    height: 0px;
+}
+#leftside h1{
+    font-size: 3rem;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+#leftside h2{
+    font-size: 1.2rem;
+}
+.rightside img {
+    max-width: 300px;
+}
+
+/* about me */
+#about{
+    padding: 70px 0px;
+}
+.about-text{
+    /* border: 2px solid white; */
+    text-align: center;
+    margin-top: 10px;
+}
+.about-text h2{
+    font-size: 60px;  
+}
+.about-text p{
+    font-size: 20px;
+}
+
+/* services */
+.title h2 {
+    font-size: 50px;
+}
+.box{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.about-work{
+    flex-direction: column;
+
+}
+.about-work img{
+    height: 0px;
+}

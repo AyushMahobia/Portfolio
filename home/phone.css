@@ -1,0 +1,144 @@
+header{
+    background: whitesmoke
+}
+.navsection {
+    flex-direction: column;
+    height: 12%;
+}
+
+.logo {
+    width: 60%;
+    padding-left: 10px;
+    margin: 10px 0px;
+    padding-top: 15px;
+}
+
+nav a {
+    margin: 0px 9px;
+    font-size: 1rem;
+}
+
+main {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.rightside {
+    margin-top: 40px;
+}
+
+.rightside img {
+    max-width: 250px;
+}
+
+#leftside {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#leftside h3 {
+    font-size: 20px;
+}
+
+#leftside h1 {
+    font-size: 20px;
+    padding-left: 79px;
+    margin-top: -5px;
+}
+
+#leftside h2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#leftside a{
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+/* about me */
+.main{
+flex-direction: column;
+}
+#about img {
+    max-width: 250px;
+}
+.about-text {
+    width: 300px;
+}
+.about-text h2{
+    margin-top: 9px;
+    font-size: 45px;
+}
+.about-text h5{
+    font-size: 20px;
+    font-weight: 100;
+}
+.about-text p{
+    font-size: 18px;
+    line-height: 1.7rem;
+    font-weight: 100;
+}
+
+/* service */
+.title{
+    height: 10%;
+}
+.title h2{
+    font-size: 30px;
+}
+.box{
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.p1{
+    font-size: 16px;
+    padding-right: 10px;
+}
+.card h3{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.card h5{
+    font-size: 15px;
+}
+.about-work a{
+    font-size: 14px;
+}
+.card ul li{
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* contact */
+#contact{
+    padding: 30px 0px 30px 0px;
+}
+#contact h2{
+    font-size: 45px;
+}
+#contact form label{
+    font-size: 20px;
+    /* margin-left: 5px; */
+    /* margin-bottom: 5px; */
+}
+#name{
+    width: 300px;
+    height: 30px;
+}
+
+#email{
+    width: 300px;
+    height: 30px;
+}
+
+#phone{
+    width: 300px;
+    height: 30px;
+}
+#your-self{
+    width: 300px;
+    height: 100px;
+}
